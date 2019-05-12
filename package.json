@@ -1,0 +1,15 @@
+{
+  "name": "officialwebpage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d public"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://github.com/MarceloMariduena/OfficialWebpage",
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}
