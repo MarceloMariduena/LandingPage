@@ -9,6 +9,10 @@ body{
     background-color: transparent; }
 ::selection {
     background-color: transparent; }
+.noGapTop {
+    margin-top: -8px; }
+.noGapBottom {
+    margin-bottom: -10px; }
 
 #Home {
     opacity: 0.8;
@@ -28,7 +32,14 @@ body{
         display: none; } }
 
 #secondParallax {
-    height: 500px;
+    height: 600px;
     background-image: url("./images/macCoffee.jpg");
     background-size: cover;
     background-attachment: fixed; }
+
+#thirdParallax {
+    height: 600px;
+    background-image: url("./images/macOffice.jpg");
+    background-size: cover;
+    background-attachment: fixed; }
+
