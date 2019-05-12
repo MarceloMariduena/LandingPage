@@ -1,0 +1,36 @@
+html{
+    scroll-behavior: smooth; }
+body{
+    margin:0;
+    font-family: "Lato"; }
+* {
+    outline: none !important; }
+::-moz-selection {
+    background-color: transparent; }
+::selection {
+    background-color: transparent; }
+
+#Home {
+    opacity: 0.8;
+    height: 1000px;
+    background-image: url("./images/laptopSmartphone.jpg");
+    background-size: cover;
+    background-attachment: fixed; }
+
+.centerText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    font-size: 24px; }
+
+@media screen and (max-width: 968px) {
+    .hide {
+        display: none; } }
+
+#About {
+    padding: 125px 0; } 
+
+#chartContainer {
+    padding: 30px 0;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Marcelo Mariduena</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="index.css">
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.0/js/mdb.min.js"></script>
+</head>
+<body>
+
+<!-- Responsive Navbar ..add static-top or fixed-top -->
+<nav class="navbar navbar-expand-md bg-dark navbar-dark p-0 fixed-top">
+    <a class="navbar-brand bg-success p-3" href="#Home">&nbsp;&nbsp;&nbsp;HOME&nbsp;&nbsp;&nbsp;</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link p-3" href="#About"><i class="fa fa-user"></i> ABOUT</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link p-3" href="#Portfolio"><i class="fa fa-th"></i> PORTFOLIO</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link p-3" href="#Contact"><i class="fa fa-envelope"></i> CONTACT</a>
+        </li>    
+        </ul>
+    </div>  
+</nav>
+
+<section id="Home">
+    <a class="btn btn-dark centerText p-3 shadow" href="https://github.com/marcelomariduena" target="_blank">
+        MARCELO <span class="hide">MARIDUENA</span>
+    </a>
+</section>
+
+<section id="About" class="container">
+    <div class="text-center">
+        <h1 class="p-3">ABOUT</h1>
+        <p> Web Developer <br/>
+            Java Programmer <br/>
+            Transgender
+        </p>
+        <hr/>
+        <br/>
+        <br/>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6 text-center">
+            <h5 class="p-3"><b><i class="fa fa-user"></i> Marcelo Mariduena</b></h5>
+            <img class="w-100 shadow-lg" src="images/self.jpg" />
+        </div>
+
+        <!--
+        <div class="col-lg-6">
+            <br/>
+            <br/>
+            <h5><i class="fa fa-file-code-o"></i> HTML</h5>
+            <div class="w-100 bg-light text-center text-light">
+                <div class="bg-dark p-2" style="width:95%">95%</div>
+            </div>
+            <br/>
+        
+            <h5><i class="fa fa-laptop"></i> CSS </h5>
+            <div class="w-100 bg-light text-center text-light">
+                <div class="bg-dark p-2" style="width:95%">95%</div>
+            </div>
+            <br/>
+        
+            <h5><i class="fa fa-code"></i> JavaScript </h5>
+            <div class="w-100 bg-light text-center text-light">
+                <div class="bg-dark p-2" style="width:80%">80%</div>
+            </div>
+            <br/>
+        
+            <h5><i class="fa fa-cloud-upload"></i> Java </h5>
+            <div class="w-100 bg-light text-center text-light">
+                <div class="bg-dark p-2" style="width:70%">70%</div>
+            </div>
+        </div>
+        -->
+
+        <div id="chartContainer" class="col-lg-6">
+            <canvas id="radarChart"></canvas>
+        </div>
+    </div>
+</section>
+
+<script>
+  //radar
+  let ctxR = document.getElementById("radarChart").getContext('2d');
+  let myRadarChart = new Chart(ctxR, {
+    type: 'radar',
+    data: {
+      labels: ["Coding", "Responsive Design", "Version Control", "Testing", "Debugging", "Deployment", "Database Management"],
+      datasets: [{
+          label: "My First dataset",
+          data: [95, 95, 70, 80, 55, 80, 45],
+          backgroundColor: [
+            'rgba(0, 250, 220, .2)',
+          ],
+          borderColor: [
+            'rgba(0, 213, 132, .7)',
+          ],
+          borderWidth: 2
+        }
+      ]
+    },
+    options: {
+      responsive: true
+    }
+  });
+
+</script>
+</body>
+</html>
