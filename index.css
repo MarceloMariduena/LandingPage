@@ -1,7 +1,7 @@
 html{
     scroll-behavior: smooth; }
 body{
-    margin:0;
+    margin: 0;
     font-family: "Lato"; }
 * {
     outline: none !important; }
@@ -18,19 +18,17 @@ body{
     background-attachment: fixed; }
 
 .centerText {
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); 
-    font-size: 24px; }
+    transform: translate(-50%, -50%); }
 
 @media screen and (max-width: 968px) {
     .hide {
         display: none; } }
 
-#About {
-    padding: 125px 0; } 
-
-#chartContainer {
-    padding: 30px 0;
-}
+#secondParallax {
+    height: 500px;
+    background-image: url("./images/macCoffee.jpg");
+    background-size: cover;
+    background-attachment: fixed; }

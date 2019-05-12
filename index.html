@@ -21,9 +21,9 @@
 </head>
 <body>
 
-<!-- Responsive Navbar ..add static-top or fixed-top -->
+<!-- Responsive navbar fixed at top -->
 <nav class="navbar navbar-expand-md bg-dark navbar-dark p-0 fixed-top">
-    <a class="navbar-brand bg-success p-3" href="#Home">&nbsp;&nbsp;&nbsp;HOME&nbsp;&nbsp;&nbsp;</a>
+    <a class="navbar-brand bg-success pt-3 pb-3 pl-4 pr-4" href="#Home">&nbsp;&nbsp;&nbsp;HOME&nbsp;&nbsp;&nbsp;</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -42,27 +42,27 @@
     </div>  
 </nav>
 
+<!-- First parallax with github link -->
 <section id="Home">
     <a class="btn btn-dark centerText p-3 shadow" href="https://github.com/marcelomariduena" target="_blank">
-        MARCELO <span class="hide">MARIDUENA</span>
+        <h3 class="pt-2 pl-5 pr-5">MARCELO <span class="hide">MARIDUENA</span></h3>
     </a>
 </section>
 
-<section id="About" class="container">
-    <div class="text-center">
+<!-- About -->
+<section id="About" class="container pt-5 pb-5">
+    <div class="text-center pb-5">
         <h1 class="p-3">ABOUT</h1>
         <p> Web Developer <br/>
             Java Programmer <br/>
             Transgender
         </p>
         <hr/>
-        <br/>
-        <br/>
     </div>
 
     <div class="row">
-        <div class="col-lg-6 text-center">
-            <h5 class="p-3"><b><i class="fa fa-user"></i> Marcelo Mariduena</b></h5>
+        <div class="col-lg-6 text-center pb-5">
+            <h5 class="p-3"><i class="fa fa-user"></i> Marcelo Mariduena</h5>
             <img class="w-100 shadow-lg" src="images/self.jpg" />
         </div>
 
@@ -95,11 +95,40 @@
         </div>
         -->
 
-        <div id="chartContainer" class="col-lg-6">
+        <div id="chartContainer" class="col-lg-6 pt-5 pb-5">
             <canvas id="radarChart"></canvas>
+            
+            <div class="container text-center p-5">
+                <h4>Technologies:</h4>
+                <p>HTML, CSS (SASS, Grid, Flexbox), JavaScript (React, jQuery, JSON), Java, SQL, Node (npm), Git, etc.</p>
+            </div>
         </div>
     </div>
 </section>
+
+<!-- Relative footer -->
+<section class="bg-dark">
+    <h3 class="text-light text-center p-5">10+ <br/> Programming Languages</h3>
+</section>
+
+<!-- Second parallax -->
+<section id="secondParallax" style="margin-top: -8px;">
+    <h1 class="centerText text-center"></h1>
+</section>
+
+<!-- Portfolio projects -->
+<section id="Portfolio" class="container pt-5 pb-5">
+    <div class="text-center pb-5">
+        <h1 class="p-3">Portfolio</h1>
+        <p>Major Projects: </p>
+        <hr/>
+    </div>
+
+    <div class="row">
+
+    </div>
+</section>
+
 
 <script>
   //radar
@@ -110,7 +139,7 @@
       labels: ["Coding", "Responsive Design", "Version Control", "Testing", "Debugging", "Deployment", "Database Management"],
       datasets: [{
           label: "My First dataset",
-          data: [95, 95, 70, 80, 55, 80, 45],
+          data: [95, 95, 80, 80, 75, 80, 25],
           backgroundColor: [
             'rgba(0, 250, 220, .2)',
           ],
