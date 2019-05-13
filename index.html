@@ -66,35 +66,6 @@
             <img class="w-100 shadow-lg" src="images/self.jpg" />
         </div>
 
-        <!--
-        <div class="col-lg-6">
-            <br/>
-            <br/>
-            <h5><i class="fa fa-file-code-o"></i> HTML</h5>
-            <div class="w-100 bg-light text-center text-light">
-                <div class="bg-dark p-2" style="width:95%">95%</div>
-            </div>
-            <br/>
-        
-            <h5><i class="fa fa-laptop"></i> CSS </h5>
-            <div class="w-100 bg-light text-center text-light">
-                <div class="bg-dark p-2" style="width:95%">95%</div>
-            </div>
-            <br/>
-        
-            <h5><i class="fa fa-code"></i> JavaScript </h5>
-            <div class="w-100 bg-light text-center text-light">
-                <div class="bg-dark p-2" style="width:80%">80%</div>
-            </div>
-            <br/>
-        
-            <h5><i class="fa fa-cloud-upload"></i> Java </h5>
-            <div class="w-100 bg-light text-center text-light">
-                <div class="bg-dark p-2" style="width:70%">70%</div>
-            </div>
-        </div>
-        -->
-
         <div id="chartContainer" class="col-lg-6 pt-5 pb-5">
             <canvas id="radarChart"></canvas>
             
@@ -120,7 +91,7 @@
 <section id="Portfolio" class="container pt-5 pb-5">
     <div class="text-center pb-5">
         <h1 class="p-3">PORTFOLIO</h1>
-        <p>Major Projects: </p>
+        <p>Major Projects </p>
         <hr/>
     </div>
 
@@ -169,17 +140,35 @@
 <section id="Contact" class="container pt-5 pb-5">
     <div class="text-center pb-5">
         <h1 class="p-3">CONTACT</h1>
-        <p>Phone: </p>
         <hr/>
     </div>
+    <form class="pt-5 pb-5" action="contact.php" method="POST">
+        <div class="form-group">
+            <label for="email">Name:</label>
+            <input class="form-control" type="text" name="name" placeholder="Full name" required>
+        </div>
+        <div class="form-group">
+            <label for="e-mail">Email:</label>
+            <input class="form-control" type="email" name="e-mail" placeholder="Email address" required>
+        </div>
+        <div class="form-group">
+            <label for="subject">Subject:</label>
+            <input class="form-control" type="email" name="subject" placeholder="Subject" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea class="form-control" name="message" placeholder="Your message here.." required></textarea>
+        </div>
+        <button class="btn btn-primary pl-4 pr-4" type="submit">SEND</button>
+    </form>
 </section>
 
 <!-- Footer -->
 <section class="bg-dark noGapBottom">
     <a class="d-block" href="https://github.com/MarceloMariduena" target="_blank">
-        <h3 class="text-light text-center p-5">
-        Github
-        </h3>
+        <h1 class="text-light text-center p-5">
+            <i class="fa fa-github"></i>
+        </h1>
     </a>
 </section>
 
