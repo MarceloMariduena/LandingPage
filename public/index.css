@@ -27,6 +27,19 @@ body{
     left: 50%;
     transform: translate(-50%, -50%); }
 
+.selfie {
+    opacity: 0.7;
+    transition: 0.5s; }
+.selfie:hover {
+    opacity: 1;
+    transition: 0.5s; }
+
+.project {
+    transition: 0.5s; }
+.project:hover {
+    opacity: 0.6;
+    transition: 0.5s }
+
 @media screen and (max-width: 968px) {
     .hide {
         display: none; } }
