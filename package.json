@@ -10,6 +10,6 @@
   "license": "ISC",
   "homepage": "https://github.com/MarceloMariduena/OfficialWebpage",
   "dependencies": {
-    "gh-pages": "^2.0.1"
+    "gh-pages": "^5.0.0"
   }
 }
